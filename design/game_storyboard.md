@@ -1,67 +1,37 @@
-# Project One Storyboard | Text-Based Adventure Game
+# Midnight at Hollow Creek Carnival
 
-> Complete the `TODO:` prompts using your own game idea. This file is a graded
-> Project One deliverable and later becomes a reference for Project Two.
+## Game Theme and Story
 
-## Theme and Storyline
-
-**Theme:**
-
-TODO: Name and briefly describe your game's theme.
-
-**Storyline:**
-
-TODO: In one short paragraph, explain the setting, the player's goal, the items
-the player must gather, and the threat created by the villain.
+The game takes place at an abandoned Halloween carnival called Hollow Creek Carnival. The player enters the carnival on Halloween night after hearing rumors about the disappearance of the carnival's former Ringmaster. Once the player enters, the gates lock behind them and they have to explore the carnival to find out what happened. The player must collect seven items while moving through the carnival and avoid the Ringmaster, who is hiding inside the Big Top. The player wins by collecting all seven items before entering the Big Top and encountering the Ringmaster.
 
 ## Rooms
 
-Project One requires a minimum of eight rooms.
+The game will contain the following nine rooms:
 
-1. TODO: Start room
-2. TODO: Room
-3. TODO: Room
-4. TODO: Room
-5. TODO: Room
-6. TODO: Room
-7. TODO: Room
-8. TODO: Villain room
-
-Add more rooms if your design needs them.
+1. Ticket Booth — Starting room
+2. Pumpkin Patch
+3. Haunted House
+4. Corn Maze
+5. Game Tent
+6. Old Chapel
+7. Maintenance Shed
+8. Ferris Wheel
+9. Big Top — Villain's room
 
 ## Items
 
-With the minimum eight-room design, Project One requires at least six items.
-Every room except the start room and villain room must contain one item.
+The game will contain the following seven items:
 
-1. TODO: Item
-2. TODO: Item
-3. TODO: Item
-4. TODO: Item
-5. TODO: Item
-6. TODO: Item
+* Pumpkin Patch — Silver Lantern
+* Haunted House — Rusty Key
+* Corn Maze — Compass
+* Game Tent — Golden Token
+* Old Chapel — Holy Water
+* Maintenance Shed — Bolt Cutters
+* Ferris Wheel — Carnival Map
 
-If you add rooms beyond the minimum, add an item for every additional room
-except the start room and villain room.
+The Ticket Booth is the starting room and does not contain an item. The Big Top contains the villain and does not contain an item.
 
 ## Villain
 
-TODO: Identify and briefly describe the villain.
-
-## Storyboard and Map Check
-
-Before submitting, compare this storyboard with `game_map.drawio`.
-
-* [ ] I included eight (8) rooms.
-* [ ] I included six (6) collectable items.
-* [ ] The start room has no item.
-* [ ] The villain room has no item.
-* [ ] Every room except the start room and villain room contains one item.
-* [ ] Room, item, and villain names match my map.
-* [ ] The map allows the player to collect all required items before the
-  villain is encountered.
-
-## Project Two Handoff
-
-Keep this file after Project One. In Module Seven, use these names and design
-choices when building the final room/item dictionary and player-facing output.
+The villain is The Ringmaster, the former owner of Hollow Creek Carnival. The player must avoid the Big Top until all seven items have been collected. If the player enters the Big Top before collecting all of the items, the Ringmaster catches them and the game ends.
