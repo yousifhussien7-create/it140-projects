@@ -1,25 +1,80 @@
-# Project One Move-Between-Rooms Pseudocode
-#
-# Graded checkpoint: Module Five Project One
-# Later use: conceptual support for M6; movement design for M7
-#
-# Review the course-provided movement flowchart before completing this file.
-# Write pseudocode, not Python code. Use clear indentation and course-appropriate
-# keywords such as INPUT, OUTPUT, IF, ELSE, WHILE, SET, or similar terms.
+START
 
-# TODO 1: Identify the information the movement process needs.
-# Consider the player's current room and movement command.
+Set the player's starting room to the Ticket Booth.
 
-# TODO 2: Prompt for and receive the player's movement command.
+WHILE the game is active
 
-# TODO 3: Validate whether the requested movement is possible from the
-# current room. Show the decision clearly.
+```
+Display the player's current room.
 
-# TODO 4: Describe what happens when the movement command is valid.
-# Include the room update and player output.
+Display the available movement directions.
 
-# TODO 5: Describe what happens when the movement command is invalid.
-# Include the output the player should receive.
+Ask the player to enter a direction: north, south, east, or west.
 
-# TODO 6: Show how movement fits into repeated gameplay.
-# The final game continues accepting commands until a required ending occurs.
+IF the player enters north
+
+    IF a room exists to the north of the current room
+
+        Move the player to the room to the north.
+
+        Display the player's new room.
+
+    ELSE
+
+        Display "You cannot move north from this room."
+
+    END IF
+
+ELSE IF the player enters south
+
+    IF a room exists to the south of the current room
+
+        Move the player to the room to the south.
+
+        Display the player's new room.
+
+    ELSE
+
+        Display "You cannot move south from this room."
+
+    END IF
+
+ELSE IF the player enters east
+
+    IF a room exists to the east of the current room
+
+        Move the player to the room to the east.
+
+        Display the player's new room.
+
+    ELSE
+
+        Display "You cannot move east from this room."
+
+    END IF
+
+ELSE IF the player enters west
+
+    IF a room exists to the west of the current room
+
+        Move the player to the room to the west.
+
+        Display the player's new room.
+
+    ELSE
+
+        Display "You cannot move west from this room."
+
+    END IF
+
+ELSE
+
+    Display "Invalid direction. Please enter north, south, east, or west."
+
+END IF
+```
+
+END WHILE
+
+END
+
