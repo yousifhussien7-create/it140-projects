@@ -1,3 +1,4 @@
+
 """Module Six Milestone starter for the simplified movement prototype."""
 
 # A dictionary for the simplified dragon text game.
@@ -8,15 +9,32 @@ rooms = {
     "Cellar": {"west": "Bedroom"},
 }
 
+# Set the player's starting room.
+current_room = "Great Hall"
 
-# TODO: Set the player's starting room for the simplified prototype.
+# Continue the game until the player exits.
+while current_room != "exit":
+    # Display the player's current room.
+    print(f"\nYou are in the {current_room}.")
 
-# TODO: Create the gameplay loop required by the milestone.
-# Within the loop, complete the required behavior in small steps:
-#   1. Display the current room.
-#   2. Prompt for a movement command or "exit".
-#   3. Branch for a valid move, exit, or invalid input.
-#   4. Update the room only after a valid movement command.
-#   5. Continue until the required exit condition is reached.
+    # Ask the player to enter a direction or exit.
+    command = input(
+        "Enter a direction (north, south, east, west) or 'exit': "
+    ).strip().lower()
 
-# TODO: Run and debug all milestone cases in prototype/README.md.
+    # Check whether the player wants to exit.
+    if command == "exit":
+        current_room = "exit"
+        print("Thanks for playing!")
+
+    # Check whether the direction is valid for the current room.
+    elif command in rooms[current_room]:
+        current_room = rooms[current_room][command]
+
+    # Handle directions that are unavailable from this room.
+    elif command in ["north", "south", "east", "west"]:
+        print("You can't go that way from here. Try another direction.")
+
+    # Handle any other invalid command.
+    else:
+        print("Invalid command. Enter north, south, east, west, or exit.")
